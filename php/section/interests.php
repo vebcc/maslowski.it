@@ -1,7 +1,24 @@
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+<?php
+$inzap1 = "SELECT pl_value FROM interests ORDER BY ord;";
+$inzap2 = "SELECT pl_name FROM section WHERE id_name='interests';";
+//$ab1=mysqli_query($abzap1,$stylesheet);
+
+$inco1=mysqli_query($con,$inzap1);
+$inco2=mysqli_query($con,$inzap2);
+
+$inname = mysqli_fetch_row($inco2);
+
+?>
+
+
+       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+            <h2 class="mb-5"><?php echo $inname[0]; ?></h2>
+            <?php
+            while($inm = mysqli_fetch_row($inco1)){
+                echo'<p>'. $inm[0] .'</p>';
+            }
+        ?>
+
         </div>
 </section>
