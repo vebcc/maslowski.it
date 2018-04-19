@@ -10,7 +10,6 @@ $inname = mysqli_fetch_row($inco2);
 
 ?>
 
-
        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
             <h2 class="mb-5"><?php echo $inname[0]; ?></h2>

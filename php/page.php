@@ -1,8 +1,4 @@
 <?php
-//$t1=mysqli_fetch_row($u1);
-
-//echo $t1[0];
-
 $def = "SELECT pl_value FROM settings WHERE id BETWEEN 1 AND 7";
 $stylesheet = "SELECT pl_value FROM settings WHERE name='stylesheet'";
 $section = "SELECT id_name, pl_name, include FROM section ORDER BY ord";
@@ -40,7 +36,7 @@ while($t2 = mysqli_fetch_row($u2)){
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+          <span class="d-block d-lg-none"><?php echo $main[6]; ?></span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -70,8 +66,6 @@ while($t2 = mysqli_fetch_row($u2)){
         include("section/".$t4['id_name'].".php");
      }
 ?>
-
-
 
     </div>
 

@@ -26,7 +26,7 @@ while($sk1 = mysqli_fetch_row($skco1)){
 <?php
         while($sk3 = mysqli_fetch_row($skco3)){
             echo'<li class="list-inline-item">
-              <i class="devicons '.$sk3[0].'"></i>
+              <i class="devicons devicons-'.$sk3[0].'"></i>
             </li>';
         }
 
@@ -41,8 +41,6 @@ while($sk1 = mysqli_fetch_row($skco1)){
                 }
 
                 ?>
-
-
 
           </ul>
         </div>

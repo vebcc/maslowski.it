@@ -65,6 +65,14 @@ h2 {
 }
 
 @media (min-width: 992px) {
+    .bg-primary {
+        /* background-color: #BD5D38 !important; */
+        background-image: url("../img/menubg.png") !important;
+    }
+    .nav-link{
+        background-color: rgba(30, 31, 33, 0.9);
+        border-radius: 150px;
+    }
   #sideNav {
     text-align: center;
     position: fixed;

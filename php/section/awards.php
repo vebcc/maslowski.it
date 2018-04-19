@@ -18,7 +18,6 @@ $awname = mysqli_fetch_row($awco2);
                   echo'<li><i class="fa-li fa fa-trophy text-warning"></i>'. $awm[0] .'</li>';
               }
               ?>
-
           </ul>
         </div>
       </section>
