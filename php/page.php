@@ -1,7 +1,7 @@
 <?php
 $def = "SELECT pl_value FROM settings WHERE id BETWEEN 1 AND 7";
 $stylesheet = "SELECT pl_value FROM settings WHERE name='stylesheet'";
-$section = "SELECT id_name, pl_name, include FROM section ORDER BY ord";
+$section = "SELECT id_name, pl_name, include FROM section WHERE ord!=0 ORDER BY ord";
 
 mysqli_set_charset( $con, 'utf8');
 
