@@ -156,3 +156,22 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.portf{
+    /* background-color: rgba(30, 31, 33, 0.9); */
+    text-align: center;
+}
+
+.portfimg{
+    width: 100%;
+    height: auto;
+}
+
+.portlink{
+    color: #868e96;
+}
+
+.portlink:hover{
+    text-decoration: none;
+    color: #868e96;
+}
