@@ -68,7 +68,7 @@ while($t2 = mysqli_fetch_row($u2)){
 ?>
 
     </div>
-     siemka
+     siemkatt
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
